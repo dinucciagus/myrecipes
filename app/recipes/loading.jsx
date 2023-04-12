@@ -1,4 +1,10 @@
+import React from "react";
+import Spinner from "@/components/spinner";
 const Loading = () => {
-  return <div>loading recipes</div>;
+  return (
+    <div>
+      <Spinner />
+    </div>
+  );
 };
 export default Loading;
