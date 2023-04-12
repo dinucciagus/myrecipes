@@ -42,7 +42,7 @@ const Details = async ({ id }) => {
                 <h1 className="pb-6">Ingredients:</h1>
                 {ingredients.map((i) =>
                   i.name.length > 1 ? (
-                    <li className="font-light">
+                    <li key={i.name} className="font-light">
                       {" "}
                       + {i.name + " : " + i.quantity}
                     </li>

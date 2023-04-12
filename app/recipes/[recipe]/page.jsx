@@ -14,7 +14,7 @@ const Page = async ({ params }) => {
   return (
     <div className="bg-pink grid grid-cols-1 justify-center min-w-full gap-6 p-8 text-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {recipes.meals.map((r, i) => {
-        return <Card recipe={r} type={params.recipe} />;
+        return <Card recipe={r} key={i} type={params.recipe} />;
       })}
     </div>
   );
