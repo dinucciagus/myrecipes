@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "C:/Users/dinuc/OneDrive/Escritorio/DEV PROJECTS/myrecipes/myrecipes/assets/logo.png";
+import logo from "@/assets/logo.png";
 import { usePathname } from "next/navigation";
 const Header = () => {
   const paths = usePathname().split("/");
